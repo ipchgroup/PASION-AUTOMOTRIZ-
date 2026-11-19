@@ -1,98 +1,237 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pasión Automotriz | Trujillo</title>
+  <title>Pasión Automotriz | Taller Mecánico y GLP en Trujillo</title>
   <script src="https://tailwindcss.com"></script>
 </head>
-<body class="bg-zinc-950 text-white font-sans pb-24">
-
-  <!-- Encabezado -->
-  <header class="flex items-center justify-between px-4 py-3 bg-zinc-900 border-b border-zinc-800">
-    <div class="flex items-center gap-2">
-      <div class="w-8 h-8 rounded-full bg-yellow-400 text-black font-bold flex items-center justify-center text-sm">P</div>
-      <span class="font-semibold text-sm">Pasión Automotriz</span>
+<body class="bg-black text-white font-sans pb-24">
+  <header class="sticky top-0 z-40 flex items-center justify-between px-4 py-3 bg-zinc-950/95 backdrop-blur border-b border-zinc-800">
+    <div class="flex items-center gap-2.5">
+      <div class="w-8 h-8 rounded-full bg-yellow-400 text-black font-black flex items-center justify-center text-sm">P</div>
+      <span class="font-bold text-sm">Pasión Automotriz</span>
     </div>
-    <a href="#contacto" class="text-xs text-zinc-400 hover:text-white">Ubicación</a>
+    <nav class="flex gap-4 text-xs text-zinc-400">
+      <a href="#servicios" class="hover:text-yellow-400">Servicios</a>
+      <a href="#cotizar" class="hover:text-yellow-400">Cotizar</a>
+      <a href="#contacto" class="hover:text-yellow-400">Ubicación</a>
+    </nav>
   </header>
-
-  <!-- Sección Principal -->
-  <main class="px-5 pt-8 pb-6 max-w-md mx-auto">
-    <!-- Reseñas -->
-    <div class="inline-flex items-center gap-1.5 bg-zinc-900 border border-zinc-800 px-3 py-1 rounded-full text-xs mb-4">
+  <main class="px-5 pt-8 pb-6 max-w-lg mx-auto">
+    <div class="inline-flex items-center gap-1.5 bg-zinc-900 border border-yellow-400/30 px-3 py-1 rounded-full text-xs mb-4">
       <span class="text-yellow-400 font-bold">4.9 ★</span>
-      <span class="text-zinc-300">Taller de confianza en Trujillo</span>
+      <span class="text-zinc-300">Taller especialista en Trujillo</span>
     </div>
-
-    <!-- Título y Descripción -->
-    <h1 class="text-3xl font-bold tracking-tight mb-2">Pasión Automotriz</h1>
-    <p class="text-zinc-200 text-base mb-1">Escáner, afinamiento y reparación en Trujillo</p>
-    <p class="text-zinc-400 text-sm mb-6">Le explicamos qué tiene su carro, sin vueltas.</p>
-
-    <!-- Botones Principales -->
+    <h1 class="text-3xl font-extrabold tracking-tight mb-2">Pasión <span class="text-yellow-400">Automotriz</span></h1>
+    <p class="text-zinc-200 text-base mb-1">Mecánica general, diagnóstico electrónico y conversiones a GLP.</p>
+    <p class="text-zinc-400 text-sm mb-6">Le explicamos qué tiene su vehículo con claridad y sin vueltas.</p>
     <div class="flex flex-col gap-3 mb-8">
-      <a href="https://wa.me" target="_blank" class="w-full py-3.5 px-4 bg-yellow-400 hover:bg-yellow-300 text-black font-bold rounded-full text-center transition">
-        Cotizar por WhatsApp
-      </a>
-      <a href="#servicios" class="w-full py-3.5 px-4 bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white font-semibold rounded-full text-center transition">
-        Ver servicios y cómo trabajamos
-      </a>
+      <a href="https://wa.me" target="_blank" class="w-full py-3.5 px-4 bg-yellow-400 hover:bg-yellow-300 text-black font-bold rounded-full text-center">Cotizar por WhatsApp</a>
+      <a href="#cotizar" class="w-full py-3.5 px-4 bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white font-semibold rounded-full text-center">Cotizar en 1 minuto</a>
     </div>
-
-    <!-- Ubicación y Teléfono -->
     <div id="contacto" class="flex justify-between items-start gap-4 text-xs text-zinc-300 border-t border-zinc-800 pt-5 mb-8">
       <div>
-        <p class="font-medium text-white">📍 Av. Metropolitana II, Mz. D Lt. 12</p>
+        <p class="font-semibold text-white">📍 Av. Metropolitana II, Mz. D Lt. 12</p>
         <p class="text-zinc-400 mt-0.5">Urb. Las Orquídeas, Trujillo</p>
-        <a href="https://google.com" target="_blank" class="text-yellow-400 font-medium mt-1.5 inline-block">Cómo llegar en Maps →</a>
+        <a href="https://google.com" target="_blank" class="text-yellow-400 font-semibold mt-1.5 inline-block">Cómo llegar en Maps →</a>
       </div>
       <div class="text-right shrink-0">
-        <p class="font-medium text-white">📞 924 666 810</p>
-        <p class="text-zinc-400 mt-0.5">Atención previa cita</p>
+        <p class="font-semibold text-white">📞 924 666 810</p>
+        <p class="text-zinc-400 mt-0.5">Trujillo, Perú</p>
       </div>
     </div>
-
-    <!-- Servicios Destacados -->
-    <section id="servicios" class="mb-6">
-      <p class="text-yellow-400 text-xs font-bold tracking-widest uppercase mb-3">Nuestros Servicios</p>
-      <div class="grid grid-cols-2 gap-2.5 text-sm">
-        <div class="bg-zinc-900 border border-zinc-800 p-3.5 rounded-xl">
-          <p class="font-semibold text-white">💻 Escáner</p>
-          <p class="text-zinc-400 text-xs mt-1">Diagnóstico electrónico computarizado.</p>
-        </div>
-        <div class="bg-zinc-900 border border-zinc-800 p-3.5 rounded-xl">
-          <p class="font-semibold text-white">⚙️ Afinamiento</p>
-          <p class="text-zinc-400 text-xs mt-1">Mantenimiento preventivo y motor.</p>
-        </div>
-        <div class="bg-zinc-900 border border-zinc-800 p-3.5 rounded-xl">
-          <p class="font-semibold text-white">🔧 Reparación</p>
-          <p class="text-zinc-400 text-xs mt-1">Mecánica general y solución de fallas.</p>
-        </div>
-        <div class="bg-zinc-900 border border-zinc-800 p-3.5 rounded-xl">
-          <p class="font-semibold text-white">🛡️ Revisión</p>
-          <p class="text-zinc-400 text-xs mt-1">Chequeo completo antes de viajar.</p>
-        </div>
+    <section id="servicios" class="mb-8">
+      <p class="text-yellow-400 text-xs font-bold tracking-widest uppercase mb-1">Nuestros Servicios</p>
+      <h2 class="text-xl font-bold mb-4">Especialistas en su vehículo</h2>
+      <div class="space-y-3 text-sm">
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">1. Mantenimiento Preventivo</h3><p class="text-zinc-400 text-xs mt-1">Cambio de aceite, filtros y revisión periódica para evitar fallas.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">2. Mantenimiento Correctivo</h3><p class="text-zinc-400 text-xs mt-1">Solución de fallas mecánicas, frenos, suspensión y componentes desgastados.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">3. Diagnóstico Eléctrico y Electrónico</h3><p class="text-zinc-400 text-xs mt-1">Escáner automotriz avanzado para detectar testigos y fallas electrónicas.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">4. Conversiones y Mantenimiento a GLP</h3><p class="text-zinc-400 text-xs mt-1">Instalación, calibración y mantenimiento preventivo de sistemas a gas GLP.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">5. Afinamiento Electrónico</h3><p class="text-zinc-400 text-xs mt-1">Limpieza de inyectores, cuerpo de aceleración, bujías y sensores.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">6. Aire Acondicionado</h3><p class="text-zinc-400 text-xs mt-1">Carga de gas, detección de fugas y mantenimiento del sistema de climatización.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">7. Reparación de Motores</h3><p class="text-zinc-400 text-xs mt-1">Overhaul completo, empaques, distribución y ajuste de precisión.</p></div>
       </div>
     </section>
-
-    <!-- Cómo Trabajamos -->
-    <section class="text-center bg-zinc-900/60 border border-zinc-800 rounded-2xl p-6">
-      <p class="text-yellow-400 text-xs font-bold tracking-widest uppercase mb-2">Cómo trabajamos</p>
-      <h2 class="text-xl font-bold mb-2">Le decimos cuánto y cuándo, antes de tocar su carro</h2>
-      <p class="text-zinc-400 text-sm">Escríbanos antes de venir: le confirmamos disponibilidad al instante.</p>
+    <section id="cotizar" class="bg-zinc-950 border border-yellow-400/40 rounded-2xl p-5 mb-8">
+      <p class="text-yellow-400 text-xs font-bold tracking-widest uppercase mb-1">Cotice en 1 minuto</p>
+      <h2 class="text-lg font-bold mb-3">Envíe los datos de su carro</h2>
+      <div class="space-y-3 text-sm">
+        <input id="vehiculo" type="text" placeholder="Marca y modelo (ej. Toyota Yaris)" class="w-full bg-black border border-zinc-700 rounded-xl px-3.5 py-2.5 text-white">
+        <input id="anio" type="text" placeholder="Año (ej. 2018)" class="w-full bg-black border border-zinc-700 rounded-xl px-3.5 py-2.5 text-white">
+        <textarea id="problema" rows="2" placeholder="¿Qué servicio necesita o qué falla presenta?" class="w-full bg-black border border-zinc-700 rounded-xl px-3.5 py-2.5 text-white"></textarea>
+        <button onclick="enviarWA()" class="w-full py-3.5 px-4 bg-yellow-400 hover:bg-yellow-300 text-black font-bold rounded-full">Pedir cotización por WhatsApp</button>
+      </div>
     </section>
   </main>
-
-  <!-- Barra Fija Inferior (para celulares) -->
-  <div class="fixed bottom-0 left-0 right-0 bg-zinc-900/95 backdrop-blur border-t border-zinc-800 p-3 flex gap-2 max-w-md mx-auto">
-    <a href="https://wa.me" target="_blank" class="flex-1 bg-green-500 hover:bg-green-400 text-black font-bold py-3 px-4 rounded-full text-center text-sm">
-      Cotizar por WhatsApp
-    </a>
-    <a href="https://google.com" target="_blank" class="bg-zinc-200 hover:bg-white text-black font-semibold py-3 px-5 rounded-full text-center text-sm">
-      Llegar
-    </a>
+  <div class="fixed bottom-0 left-0 right-0 bg-zinc-950/95 backdrop-blur border-t border-zinc-800 p-3 flex gap-2 max-w-lg mx-auto">
+    <a href="https://wa.me" target="_blank" class="flex-1 bg-yellow-400 text-black font-bold py-3 px-4 rounded-full text-center text-sm">Cotizar por WhatsApp</a>
+    <a href="https://google.com" target="_blank" class="bg-zinc-800 text-white border border-zinc-700 font-semibold py-3 px-5 rounded-full text-center text-sm">Llegar</a>
   </div>
-
+  <script>
+    function enviarWA() {
+      const v = document.getElementById('vehiculo').value || 'No indicado';
+      const a = document.getElementById('anio').value || 'No indicado';
+      const p = document.getElementById('problema').value || 'Consulta general';
+      const txt = `Hola Pasión Automotriz, quiero cotizar:%0A- Vehículo: ${v}%0A- Año: ${a}%0A- Consulta: ${p}`;
+      window.open(`https://wa.me{txt}`, '_blank');
+    }
+  </script>
+</body>
+</html><section id="servicios" class="mb-8">
+      <p class="text-yellow-400 text-xs font-bold tracking-widest uppercase mb-1">Nuestros Servicios</p>
+      <h2 class="text-xl font-bold mb-4">Especialistas en su vehículo</h2>
+      <div class="space-y-3 text-sm">
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">1. Mantenimiento Preventivo</h3><p class="text-zinc-400 text-xs mt-1">Cambio de aceite, filtros y revisión periódica para evitar fallas.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">2. Mantenimiento Correctivo</h3><p class="text-zinc-400 text-xs mt-1">Solución de fallas mecánicas, frenos, suspensión y componentes desgastados.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">3. Diagnóstico Eléctrico y Electrónico</h3><p class="text-zinc-400 text-xs mt-1">Escáner automotriz avanzado para detectar testigos y fallas electrónicas.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">4. Conversiones y Mantenimiento a GLP</h3><p class="text-zinc-400 text-xs mt-1">Instalación, calibración y mantenimiento preventivo de sistemas a gas GLP.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">5. Afinamiento Electrónico</h3><p class="text-zinc-400 text-xs mt-1">Limpieza de inyectores, cuerpo de aceleración, bujías y sensores.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">6. Aire Acondicionado</h3><p class="text-zinc-400 text-xs mt-1">Carga de gas, detección de fugas y mantenimiento del sistema de climatización.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">7. Reparación de Motores</h3><p class="text-zinc-400 text-xs mt-1">Overhaul completo, empaques, distribución y ajuste de precisión.</p></div>
+      </div>
+    </section>
+    <section id="cotizar" class="bg-zinc-950 border border-yellow-400/40 rounded-2xl p-5 mb-8">
+      <p class="text-yellow-400 text-xs font-bold tracking-widest uppercase mb-1">Cotice en 1 minuto</p>
+      <h2 class="text-lg font-bold mb-3">Envíe los datos de su carro</h2>
+      <div class="space-y-3 text-sm">
+        <input id="vehiculo" type="text" placeholder="Marca y modelo (ej. Toyota Yaris)" class="w-full bg-black border border-zinc-700 rounded-xl px-3.5 py-2.5 text-white">
+        <input id="anio" type="text" placeholder="Año (ej. 2018)" class="w-full bg-black border border-zinc-700 rounded-xl px-3.5 py-2.5 text-white">
+        <textarea id="problema" rows="2" placeholder="¿Qué servicio necesita o qué falla presenta?" class="w-full bg-black border border-zinc-700 rounded-xl px-3.5 py-2.5 text-white"></textarea>
+        <button onclick="enviarWA()" class="w-full py-3.5 px-4 bg-yellow-400 hover:bg-yellow-300 text-black font-bold rounded-full">Pedir cotización por WhatsApp</button>
+      </div>
+    </section>
+  </main>
+  <div class="fixed bottom-0 left-0 right-0 bg-zinc-950/95 backdrop-blur border-t border-zinc-800 p-3 flex gap-2 max-w-lg mx-auto">
+    <a href="https://wa.me" target="_blank" class="flex-1 bg-yellow-400 text-black font-bold py-3 px-4 rounded-full text-center text-sm">Cotizar por WhatsApp</a>
+    <a href="https://google.com" target="_blank" class="bg-zinc-800 text-white border border-zinc-700 font-semibold py-3 px-5 rounded-full text-center text-sm">Llegar</a>
+  </div>
+  <script>
+    function enviarWA() {
+      const v = document.getElementById('vehiculo').value || 'No indicado';
+      const a = document.getElementById('anio').value || 'No indicado';
+      const p = document.getElementById('problema').value || 'Consulta general';
+      const txt = `Hola Pasión Automotriz, quiero cotizar:%0A- Vehículo: ${v}%0A- Año: ${a}%0A- Consulta: ${p}`;
+      window.open(`https://wa.me{txt}`, '_blank');
+    }
+  </script>
+</body>
+</html><section id="servicios" class="mb-8">
+      <p class="text-yellow-400 text-xs font-bold tracking-widest uppercase mb-1">Nuestros Servicios</p>
+      <h2 class="text-xl font-bold mb-4">Especialistas en su vehículo</h2>
+      <div class="space-y-3 text-sm">
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">1. Mantenimiento Preventivo</h3><p class="text-zinc-400 text-xs mt-1">Cambio de aceite, filtros y revisión periódica para evitar fallas.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">2. Mantenimiento Correctivo</h3><p class="text-zinc-400 text-xs mt-1">Solución de fallas mecánicas, frenos, suspensión y componentes desgastados.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">3. Diagnóstico Eléctrico y Electrónico</h3><p class="text-zinc-400 text-xs mt-1">Escáner automotriz avanzado para detectar testigos y fallas electrónicas.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">4. Conversiones y Mantenimiento a GLP</h3><p class="text-zinc-400 text-xs mt-1">Instalación, calibración y mantenimiento preventivo de sistemas a gas GLP.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">5. Afinamiento Electrónico</h3><p class="text-zinc-400 text-xs mt-1">Limpieza de inyectores, cuerpo de aceleración, bujías y sensores.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">6. Aire Acondicionado</h3><p class="text-zinc-400 text-xs mt-1">Carga de gas, detección de fugas y mantenimiento del sistema de climatización.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">7. Reparación de Motores</h3><p class="text-zinc-400 text-xs mt-1">Overhaul completo, empaques, distribución y ajuste de precisión.</p></div>
+      </div>
+    </section>
+    <section id="cotizar" class="bg-zinc-950 border border-yellow-400/40 rounded-2xl p-5 mb-8">
+      <p class="text-yellow-400 text-xs font-bold tracking-widest uppercase mb-1">Cotice en 1 minuto</p>
+      <h2 class="text-lg font-bold mb-3">Envíe los datos de su carro</h2>
+      <div class="space-y-3 text-sm">
+        <input id="vehiculo" type="text" placeholder="Marca y modelo (ej. Toyota Yaris)" class="w-full bg-black border border-zinc-700 rounded-xl px-3.5 py-2.5 text-white">
+        <input id="anio" type="text" placeholder="Año (ej. 2018)" class="w-full bg-black border border-zinc-700 rounded-xl px-3.5 py-2.5 text-white">
+        <textarea id="problema" rows="2" placeholder="¿Qué servicio necesita o qué falla presenta?" class="w-full bg-black border border-zinc-700 rounded-xl px-3.5 py-2.5 text-white"></textarea>
+        <button onclick="enviarWA()" class="w-full py-3.5 px-4 bg-yellow-400 hover:bg-yellow-300 text-black font-bold rounded-full">Pedir cotización por WhatsApp</button>
+      </div>
+    </section>
+  </main>
+  <div class="fixed bottom-0 left-0 right-0 bg-zinc-950/95 backdrop-blur border-t border-zinc-800 p-3 flex gap-2 max-w-lg mx-auto">
+    <a href="https://wa.me" target="_blank" class="flex-1 bg-yellow-400 text-black font-bold py-3 px-4 rounded-full text-center text-sm">Cotizar por WhatsApp</a>
+    <a href="https://google.com" target="_blank" class="bg-zinc-800 text-white border border-zinc-700 font-semibold py-3 px-5 rounded-full text-center text-sm">Llegar</a>
+  </div>
+  <script>
+    function enviarWA() {
+      const v = document.getElementById('vehiculo').value || 'No indicado';
+      const a = document.getElementById('anio').value || 'No indicado';
+      const p = document.getElementById('problema').value || 'Consulta general';
+      const txt = `Hola Pasión Automotriz, quiero cotizar:%0A- Vehículo: ${v}%0A- Año: ${a}%0A- Consulta: ${p}`;
+      window.open(`https://wa.me{txt}`, '_blank');
+    }
+  </script>
 </body>
 </html>
+<section id="servicios" class="mb-8">
+      <p class="text-yellow-400 text-xs font-bold tracking-widest uppercase mb-1">Nuestros Servicios</p>
+      <h2 class="text-xl font-bold mb-4">Especialistas en su vehículo</h2>
+      <div class="space-y-3 text-sm">
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">1. Mantenimiento Preventivo</h3><p class="text-zinc-400 text-xs mt-1">Cambio de aceite, filtros y revisión periódica para evitar fallas.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">2. Mantenimiento Correctivo</h3><p class="text-zinc-400 text-xs mt-1">Solución de fallas mecánicas, frenos, suspensión y componentes desgastados.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">3. Diagnóstico Eléctrico y Electrónico</h3><p class="text-zinc-400 text-xs mt-1">Escáner automotriz avanzado para detectar testigos y fallas electrónicas.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">4. Conversiones y Mantenimiento a GLP</h3><p class="text-zinc-400 text-xs mt-1">Instalación, calibración y mantenimiento preventivo de sistemas a gas GLP.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">5. Afinamiento Electrónico</h3><p class="text-zinc-400 text-xs mt-1">Limpieza de inyectores, cuerpo de aceleración, bujías y sensores.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">6. Aire Acondicionado</h3><p class="text-zinc-400 text-xs mt-1">Carga de gas, detección de fugas y mantenimiento del sistema de climatización.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">7. Reparación de Motores</h3><p class="text-zinc-400 text-xs mt-1">Overhaul completo, empaques, distribución y ajuste de precisión.</p></div>
+      </div>
+    </section>
+    <section id="cotizar" class="bg-zinc-950 border border-yellow-400/40 rounded-2xl p-5 mb-8">
+      <p class="text-yellow-400 text-xs font-bold tracking-widest uppercase mb-1">Cotice en 1 minuto</p>
+      <h2 class="text-lg font-bold mb-3">Envíe los datos de su carro</h2>
+      <div class="space-y-3 text-sm">
+        <input id="vehiculo" type="text" placeholder="Marca y modelo (ej. Toyota Yaris)" class="w-full bg-black border border-zinc-700 rounded-xl px-3.5 py-2.5 text-white">
+        <input id="anio" type="text" placeholder="Año (ej. 2018)" class="w-full bg-black border border-zinc-700 rounded-xl px-3.5 py-2.5 text-white">
+        <textarea id="problema" rows="2" placeholder="¿Qué servicio necesita o qué falla presenta?" class="w-full bg-black border border-zinc-700 rounded-xl px-3.5 py-2.5 text-white"></textarea>
+        <button onclick="enviarWA()" class="w-full py-3.5 px-4 bg-yellow-400 hover:bg-yellow-300 text-black font-bold rounded-full">Pedir cotización por WhatsApp</button>
+      </div>
+    </section>
+  </main>
+  <div class="fixed bottom-0 left-0 right-0 bg-zinc-950/95 backdrop-blur border-t border-zinc-800 p-3 flex gap-2 max-w-lg mx-auto">
+    <a href="https://wa.me" target="_blank" class="flex-1 bg-yellow-400 text-black font-bold py-3 px-4 rounded-full text-center text-sm">Cotizar por WhatsApp</a>
+    <a href="https://google.com" target="_blank" class="bg-zinc-800 text-white border border-zinc-700 font-semibold py-3 px-5 rounded-full text-center text-sm">Llegar</a>
+  </div>
+  <script>
+    function enviarWA() {
+      const v = document.getElementById('vehiculo').value || 'No indicado';
+      const a = document.getElementById('anio').value || 'No indicado';
+      const p = document.getElementById('problema').value || 'Consulta general';
+      const txt = `Hola Pasión Automotriz, quiero cotizar:%0A- Vehículo: ${v}%0A- Año: ${a}%0A- Consulta: ${p}`;
+      window.open(`https://wa.me{txt}`, '_blank');
+    }
+  </script>
+</body>
+</html>
+<section id="servicios" class="mb-8">
+      <p class="text-yellow-400 text-xs font-bold tracking-widest uppercase mb-1">Nuestros Servicios</p>
+      <h2 class="text-xl font-bold mb-4">Especialistas en su vehículo</h2>
+      <div class="space-y-3 text-sm">
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">1. Mantenimiento Preventivo</h3><p class="text-zinc-400 text-xs mt-1">Cambio de aceite, filtros y revisión periódica para evitar fallas.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">2. Mantenimiento Correctivo</h3><p class="text-zinc-400 text-xs mt-1">Solución de fallas mecánicas, frenos, suspensión y componentes desgastados.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">3. Diagnóstico Eléctrico y Electrónico</h3><p class="text-zinc-400 text-xs mt-1">Escáner automotriz avanzado para detectar testigos y fallas electrónicas.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">4. Conversiones y Mantenimiento a GLP</h3><p class="text-zinc-400 text-xs mt-1">Instalación, calibración y mantenimiento preventivo de sistemas a gas GLP.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">5. Afinamiento Electrónico</h3><p class="text-zinc-400 text-xs mt-1">Limpieza de inyectores, cuerpo de aceleración, bujías y sensores.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">6. Aire Acondicionado</h3><p class="text-zinc-400 text-xs mt-1">Carga de gas, detección de fugas y mantenimiento del sistema de climatización.</p></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-4 rounded-2xl"><h3 class="font-bold text-yellow-400">7. Reparación de Motores</h3><p class="text-zinc-400 text-xs mt-1">Overhaul completo, empaques, distribución y ajuste de precisión.</p></div>
+      </div>
+    </section>
+    <section id="cotizar" class="bg-zinc-950 border border-yellow-400/40 rounded-2xl p-5 mb-8">
+      <p class="text-yellow-400 text-xs font-bold tracking-widest uppercase mb-1">Cotice en 1 minuto</p>
+      <h2 class="text-lg font-bold mb-3">Envíe los datos de su carro</h2>
+      <div class="space-y-3 text-sm">
+        <input id="vehiculo" type="text" placeholder="Marca y modelo (ej. Toyota Yaris)" class="w-full bg-black border border-zinc-700 rounded-xl px-3.5 py-2.5 text-white">
+        <input id="anio" type="text" placeholder="Año (ej. 2018)" class="w-full bg-black border border-zinc-700 rounded-xl px-3.5 py-2.5 text-white">
+        <textarea id="problema" rows="2" placeholder="¿Qué servicio necesita o qué falla presenta?" class="w-full bg-black border border-zinc-700 rounded-xl px-3.5 py-2.5 text-white"></textarea>
+        <button onclick="enviarWA()" class="w-full py-3.5 px-4 bg-yellow-400 hover:bg-yellow-300 text-black font-bold rounded-full">Pedir cotización por WhatsApp</button>
+      </div>
+    </section>
+  </main>
+  <div class="fixed bottom-0 left-0 right-0 bg-zinc-950/95 backdrop-blur border-t border-zinc-800 p-3 flex gap-2 max-w-lg mx-auto">
+    <a href="https://wa.me" target="_blank" class="flex-1 bg-yellow-400 text-black font-bold py-3 px-4 rounded-full text-center text-sm">Cotizar por WhatsApp</a>
+    <a href="https://google.com" target="_blank" class="bg-zinc-800 text-white border border-zinc-700 font-semibold py-3 px-5 rounded-full text-center text-sm">Llegar</a>
+  </div>
+  <script>
+    function enviarWA() {
+      const v = document.getElementById('vehiculo').value || 'No indicado';
+      const a = document.getElementById('anio').value || 'No indicado';
+      const p = document.getElementById('problema').value || 'Consulta general';
+      const txt = `Hola Pasión Automotriz, quiero cotizar:%0A- Vehículo: ${v}%0A- Año: ${a}%0A- Consulta: ${p}`;
+      window.open(`https://wa.me{txt}`, '_blank');
+    }
+  </script>
+</body>
+</html>
+
